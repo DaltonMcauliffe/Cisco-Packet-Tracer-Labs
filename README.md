@@ -72,3 +72,26 @@ Cisco Packet Tracer, Cisco IOS CLI, VLANs, 802.1Q, SSHv2, ACLs, DHCP, DNS, Stati
 ## Project Outcome
 
 Successfully completed the FSNA networking lab, demonstrating hands-on experience with Cisco network configuration, secure device administration, network segmentation, routing, and troubleshooting in a simulated enterprise environment.
+## Configuration Verification
+
+The following Cisco IOS commands were used to verify the completed network configuration:
+
+| Command | Verification Result |
+|---|---|
+| `show vlan brief` | Confirmed Management, Voice, and Data VLANs are active |
+| `show interfaces trunk` | Verified three operational 802.1Q trunk interfaces |
+| `show ip interface brief` | Confirmed router subinterfaces and WAN interface are operational |
+| `show ip route` | Verified connected VLAN networks and static default route |
+| `show ip dhcp binding` | Confirmed five DHCP address assignments across Voice and Data VLANs |
+
+### Verification Screenshots
+
+![VLAN Configuration](verification-screenshots/01-vlan-configuration.png)
+
+![Trunk Configuration](verification-screenshots/02-trunk-configuration.png)
+
+![Router Routing Table](verification-screenshots/04-routing-table.png)
+
+![Router Interface Status](verification-screenshots/05-router-interface-status.png)
+
+![DHCP Bindings](verification-screenshots/06-dhcp-bindings.png)
